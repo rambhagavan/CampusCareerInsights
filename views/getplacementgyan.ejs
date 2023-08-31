@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="getplacementgyan.css" >
+    <title>Document</title>
+</head>
+<body>
+    <div class="header" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;"> <img src="../logo/nitk.png" alt="nitk" height="0%" width="33%" style="margin-right: 24%;">
+        <a href="/home" style="text-decoration: none; font-size: large;">Home</a>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <a href="/profile" style="text-decoration: none; font-size: large;">Profile</a>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <a href="/gyan_review" style="text-decoration: none; font-size: large;">Gyan Review</a>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+       
+        <a href="/placed_student" style="text-decoration: none; font-size: large;">Placed Student</a> 
+        &nbsp;
+        &nbsp;
+        &nbsp;  
+        <a href="/change_password" style="text-decoration: none; font-size: large;">Change Password</a>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <a href="/logout" style="text-decoration: none; font-size: large;">Logout</a>   
+  </div>
+  <% if(data) { %>
+<div class="box2">
+   
+    <h4 style="padding-top: 14px; padding-left: 30px;"><%=data.student_name%>-Placement gyan</h4>
+</div>
+<%}%>
+ <% if(data) { %>
+<div class="box3">
+   <div class="box4">
+    <p style="padding-left: 50px;"><%=data.branch%></p>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+    <p style="padding-left: 50px;"><%=data.course%></p>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+    <a href="<%=data.link%>" style="padding-top: 13px; padding-left: 50px; text-decoration: none; color:black">Linkedin</a>
+   </div>
+   
+   <div class="job_profile">
+    <h4 style="padding-left: 15px; padding-top: 10px;">Job Profile</h4>
+    <hr>
+    <p style="padding-bottom: 30px;padding-left: 25px;"><%=data.job_title%></p>
+   </div>
+   <div class="job_profile">
+    <h4 style="padding-left: 15px; padding-top: 10px;">Job Location</h4>
+    <hr>
+    <p style="padding-bottom: 30px;padding-left: 25px;"><%=data.job_location%></p>
+   </div>
+   
+   <div class="job_profile">
+    <h4 style="padding-left: 15px; padding-top: 10px;">Selection Procedure</h4>
+    <hr>
+    <p style="padding-bottom: 30px;padding-left: 25px;"><%=data.selection_procedure%></p>
+   </div>
+   <div class="job_profile">
+    <h4 style="padding-left: 15px; padding-top: 10px;">Your Prepration Way</h4>
+    <hr>
+    <p style="padding-bottom: 30px;padding-left: 25px;"><%=data.prepration_way%></p>
+   </div>
+   <div class="job_profile">
+    <h4 style="padding-left: 15px; padding-top: 10px;">Overall Experience</h4>
+    <hr>
+    <p style="padding-bottom: 30px;padding-left: 25px;"><%=data.experience%></p>
+   </div>
+   <div class="job_profile">
+    <h4 style="padding-left: 15px; padding-top: 10px;">Advice For a Particular Company</h4>
+    <hr>
+    <p style="padding-bottom: 30px;padding-left: 25px;"><%=data.advice%></p>
+   </div>
+   <div class="job_profile">
+    <h4 style="padding-left: 15px; padding-top: 10px;">General Tips For Placement Season</h4>
+    <hr>
+    <p style="padding-bottom: 30px;padding-left: 25px;"><%=data.tips%></p>
+   </div>
+</div>
+<% } else { %>
+  <p>Gyan Review is not Filled</p>
+<% } %>
+</body>
+</html> 

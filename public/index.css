@@ -1,0 +1,155 @@
+body {
+  font-family: system-ui;
+  background-image: url("https://static.toiimg.com/thumb/msid-86635185,width-400,resizemode-4/86635185.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: #f0f0f0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 95vh;
+  height: 100vh;
+  overflow: hidden;
+}
+.box1 {
+  margin-left: 65%;
+  width: 80vh;
+}
+.header {
+  margin-right: 5%;
+  font-size: larger;
+  margin-top: 3%;
+}
+.box3 {
+  font-size: large;
+  color: black;
+}
+.box4 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 140vh;
+  background-color: white;
+  box-sizing: border-box;
+  margin-left: 20%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.box5 {
+  display: flex;
+  flex-direction: column;
+  height: 32vh;
+  width: 70vh;
+  background-color: white;
+  box-sizing: border-box;
+  margin-left: 22%;
+
+  margin-top: 12%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+/* Apply CSS to the form */
+.form1 {
+  display: flex;
+  
+  flex-direction: column;
+}
+.header {
+  margin-left: 23%;
+}
+.email,
+.password {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 10px;
+  width: 93%;
+  
+}
+.button-8 {
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #39739d;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-8:hover,
+.button-8:focus {
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+.button-8:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.button-8:active {
+  background-color: #a0c7e4;
+  box-shadow: none;
+  color: #2c5777;
+}
+.button-9 {
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #39739d;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin-right: 20%;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-9:hover,
+.button-9:focus {
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+.button-9:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.button-9:active {
+  background-color: #a0c7e4;
+  box-shadow: none;
+  color: #2c5777;
+}
+.button-container {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: row-reverse;
+}
+.box8{
+  /* margin-right:20%; */
+}

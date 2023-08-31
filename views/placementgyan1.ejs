@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="placementgyan.css" > -->
+    <style>
+        body{
+    font-family: system-ui;
+  }
+  .header{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .box1{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin-top: 2%;
+    height: 225vh;
+    width:100vh;
+    margin-left:25%;
+  }
+  .box2{
+    height:6vh;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background-color: #F0F8FF;
+    margin-bottom: 1%;
+    margin-top: 2%;
+  }
+  textarea{
+    height:190px;
+    width:90vh;
+  }
+  .button-70 {
+    background-image: linear-gradient(#0dccea, #0d70ea);
+    border: 0;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: Montserrat,sans-serif;
+    font-size: .9em;
+    margin: 5px;
+    padding: 10px 15px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+    </style>
+</head>
+<body>
+  <div class="header" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;"> <img src="../logo/nitk.png" alt="nitk" height="0%" width="33%" style="margin-right: 24%;">
+    <a href="/home" style="text-decoration: none; font-size: large;">Home</a>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <a href="/profile" style="text-decoration: none; font-size: large;">Profile</a>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <a href="/gyan_review" style="text-decoration: none; font-size: large;">Gyan Review</a>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+   
+    <a href="/placed_student" style="text-decoration: none; font-size: large;">Placed Student</a> 
+    &nbsp;
+    &nbsp;
+    &nbsp;  
+    <a href="/change_password" style="text-decoration: none; font-size: large;">Change Password</a>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <a href="/logout" style="text-decoration: none; font-size: large;">Logout</a>   
+</div>
+  <div class="box1">
+    <div class="box2"><h4 style="padding-left: 2%; padding-top: 1%;">Enter Your Gyan Review</h4></div>
+    
+   <form action="/post_gyan/intern" method="post" type="text/plain">
+    <label style="padding-left:2%"><strong>Linkedin Profile Link*</strong></label>
+    <br>
+    <input style="margin-left:2%;margin-top: 2%; margin-bottom: 2%;height:25px;width:50%" Name="linkedin_link">
+    <br>
+    <label style="padding-left:2%"><strong>Job Title*</strong></label>
+    <br>
+    <input style="margin-left:2%;margin-top: 2%; margin-bottom: 2%;height:25px;width:50%" Name="job_title">
+    <br>
+    <label style="padding-left:2%"><strong>Job Location*</strong></label>
+    <br>
+    <input style="margin-left:2%;margin-top: 2%;margin-bottom: 2% ;height:25px;width:50%" Name="job_loction">
+    <br>
+    <label style="padding-left:2%"><strong>Selection Procedure*</strong></label>
+    <br>
+    <textarea style="margin-left:2%;margin-top: 2%;margin-bottom: 2% ;"  Name="selection_procedure"></textarea>
+    <br>
+    <label style="padding-left:2%"><strong>Your Way Of Preparation*</strong></label>
+    <br>
+    <textarea style="margin-left:2%;margin-top: 2%;margin-bottom: 2% ;" Name="prepration_way"></textarea>
+    <br>
+    <label style="padding-left:2%"><strong>Overall Experience*</strong></label>
+    <br>
+    <textarea style="margin-left:2%;margin-top: 2%;margin-bottom: 2% ;" Name="experience"></textarea>
+    <br>
+    <label style="padding-left:2%"><strong>Advice For The Particular Company*</strong></label>
+    <br>
+    <textarea style="margin-left:2%;margin-top: 2%;margin-bottom: 2% ;" Name="advice"></textarea>
+    <br>
+    <label style="padding-left:2%"><strong>General Tips For Placement Season*</strong></label>
+    <br>
+    <textarea style="margin-left:2%;margin-top: 2%;margin-bottom: 2% ;" Name="tips"></textarea>
+    <button style="margin-left:46%" class="button-70" role="button">Submit Review</button>
+
+</form>
+
+  </div>
+</body>
+</html>

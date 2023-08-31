@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile</title>
+    <link rel="stylesheet"  href="userprofile.css">
+    
+</head>
+<body>
+    <div class="header" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;"> <img src="../logo/nitk.png" alt="nitk" height="0%" width="33%" style="margin-right: 24%;">
+        <a href="/home" style="text-decoration: none; font-size: large;">Home</a>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <a href="/profile" style="text-decoration: none; font-size: large;">Profile</a>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <a href="/gyan_review" style="text-decoration: none; font-size: large;">Gyan Review</a>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+       
+        <a href="/placed_student" style="text-decoration: none; font-size: large;">Placed Student</a> 
+        &nbsp;
+        &nbsp;
+        &nbsp;  
+        <a href="/change_password" style="text-decoration: none; font-size: large;">Change Password</a>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <a href="/logout" style="text-decoration: none; font-size: large;">Logout</a>   
+  </div>
+  <div class="box">
+    <div class="box2">
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            
+            <img src="<%=photo_link%>" alt="rampic" height="210px" width="188px">
+            <p style="padding-left:12px"><%= user[0].student_name %> Kumar</p>
+            <input type="file" name="profilePhoto" style="margin-left:5%;" />
+            <button class="button-10" role="button">Change Photo</button>
+        </form>
+        
+    
+    </div>
+    <div class="box1">
+        <table style="width: 100%; border-collapse: collapse; margin-top: 25px;">
+            
+            <tbody>
+                
+                <tr><td style="padding: 17px; text-align: left; border-bottom: 1px solid #ddd;"><strong style="padding-right: 10%;">Father's Name</strong><%= user[0].father_name %>
+                
+                </td></tr>
+                   <tr>
+                    <td style="padding: 17px; text-align: left; border-bottom: 1px solid #ddd;"><strong style="padding-right: 10%;">Gender</strong><%= user[0].gender %></td>   
+                   </tr>
+                   <tr>
+                    <td style="padding: 17px; text-align: left; border-bottom: 1px solid #ddd;"><strong style="padding-right: 10%;">Date Of Birth</strong>20-04-2000</td>   
+                   </tr>
+                     <tr><td style="padding: 17px; text-align: left; border-bottom: 1px solid #ddd;"><strong style="padding-right: 10%;">Blood Group</strong><%= user[0].blood_group %></td></tr>
+                   <tr>
+                    <td style="padding: 17px; text-align: left; border-bottom: 1px solid #ddd;"><strong style="padding-right: 10%;">Aadhar Number</strong><%= user[0].adhar_no %></td>
+                   </tr>
+                <tr>
+                    <td style="padding: 17px; text-align: left; border-bottom: 1px solid #ddd;"><strong style="padding-right: 10%;">Mobile Number</strong><%= user[0].mobile_no %></td>
+                </tr>
+                   <tr><td style="padding: 17px; text-align: left; border-bottom: 1px solid #ddd;"><strong style="padding-right: 10%;">Branch</strong><%= user[0].branch %></td></tr>
+                    <tr><td style="padding: 17px; text-align: left; border-bottom: 1px solid #ddd;"><strong style="padding-right: 10%;">Course</strong><%= user[0].course %></td> </tr>
+                   <tr>
+                    <td style="padding: 17px; text-align: left; border-bottom: 1px solid #ddd;"><strong style="padding-right: 10%;">Categoty</strong><%= user[0].category %></td>
+                   </tr>
+                 
+                    
+              
+            </tbody>
+        </table>
+    </div>
+    
+  </div>
+    
+</body>
+</html>

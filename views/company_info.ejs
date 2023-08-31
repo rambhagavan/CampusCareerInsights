@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="company_info.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;"> <img src="../logo/nitk.png" alt="nitk" height="0%" width="33%" style="margin-right: 24%;">
+      <a href="/home" style="text-decoration: none; font-size: large;">Home</a>
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      <a href="/profile" style="text-decoration: none; font-size: large;">Profile</a>
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      <a href="/gyan_review" style="text-decoration: none; font-size: large;">Gyan Review</a>
+      &nbsp;
+      &nbsp;
+      &nbsp;
+     
+      <a href="/placed_student" style="text-decoration: none; font-size: large;">Placed Student</a> 
+      &nbsp;
+      &nbsp;
+      &nbsp;  
+      <a href="/change_password" style="text-decoration: none; font-size: large;">Change Password</a>
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      <a href="/logout" style="text-decoration: none; font-size: large;">Logout</a>   
+</div>
+    <div class="box1">
+      <% if(data.length > 0) { %>
+      <div class="box2">
+        <h3 style="padding-left: 10px">Intership Details</h3>
+
+        <!-- <img src="../logo/logocompany.png" alt="Logo" height="20px"> -->
+        <p style="color: black; padding-left: 10px">
+          Company Name: <%=data[0].company_name%>
+        </p>
+        <p style="padding-left: 10px">Stipned:<%=data[0].stipned%></p>
+        <p style="padding-left: 10px">Job Title:<%=data[0].job_role%></p>
+        <form
+          action="/internstudent/?company_name=<%=data[0].company_name%>"
+          method="post"
+        >
+          <button style="margin: 10px" class="button-15" role="button">
+            Intership Gyan
+          </button>
+        </form>
+      </div>
+
+      <%}else{%>
+      <div class="box2">
+        <p>No student got intern</p>
+      </div>
+
+      <%}%> <% if(data1.length > 0) { %>
+      <div class="box3">
+        <h3 style="padding-left: 10px">Placement Details</h3>
+
+        <!-- <img src="../logo/logocompany.png" alt="Logo" height="20px"> -->
+        <p style="color: black; padding-left: 10px">
+          Company Name: <%=data1[0].company_name%>
+        </p>
+        <p style="padding-left: 10px">Package:<%=data1[0].CTC%></p>
+        <p style="padding-left: 10px">Job Title:<%=data1[0].job_role%></p>
+        <form
+          action="/hired_student?company_name=<%=data1[0].company_name%>"
+          method="post"
+        >
+          <button style="margin-left: 10px" class="button-15" role="button">
+            Placement Gyan
+          </button>
+        </form>
+      </div>
+      <!--  -->
+      <%}else{%>
+      <div class="box2">
+        <p>No student got intern</p>
+      </div>
+
+      <%}%>
+    </div>
+  </body>
+</html>
