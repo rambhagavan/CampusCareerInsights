@@ -13,7 +13,7 @@ body{
   }
   .box3{
     margin-top: 2%;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset; */
 width:190vh;
 height:160vh;
 margin-left: 3%; 

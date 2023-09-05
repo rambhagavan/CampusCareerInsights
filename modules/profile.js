@@ -7,10 +7,14 @@ router.get('/',(req,res)=>{
      pool.query("select * from login_info where email=?",[email],(err,results)=>{
         console.log(results[0]);
         pool.query("select * from profile_photo where email=?",[email],(err,result)=>{
-         let photo_link=result[0].profile_photo_link ;
-         if(!photo_link){
-            photo_link="upload photo"
+         let photo_link="upload photo";
+         if(result.length === 0){
+         
          }
+         else{
+            photo_link=result[0].profile_photo_link ;
+         }
+         
          res.render("userprofile",{user:results,photo_link:photo_link});
         })
     
